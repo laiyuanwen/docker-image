@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:lts
-# USER root
-# RUN chmod a+rwx /tmp
+USER root
+RUN chmod a+rwx /tmp
 
 # 修改为阿里云的源
 # RUN sed -i s@/deb.debian.org/@/mirrors.aliyun.com/@g /etc/apt/sources.list
